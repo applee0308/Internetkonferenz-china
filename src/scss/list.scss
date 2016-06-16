@@ -1,0 +1,57 @@
+@import './base/normalize';
+@import './base/utils';
+@import './components/site';
+.list__bg {
+    width: 100%;
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+
+.option--back {
+    position: absolute;
+    z-index: 999;
+    top: 28px;
+    img {
+        padding: 0 10px;
+    }
+}
+
+.list__content {
+    position: absolute;
+    top: 22%;
+    width: 100%;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 1rem 0;
+        }
+    }
+}
+
+.media {
+    display: table;
+    width: 100%;
+    .item {
+        display: table-cell;
+        vertical-align: middle;
+        &.item--l {
+            width: 50%;
+            text-align: right;
+            img {
+                margin-right: 5%;
+                width: 80%;
+            }
+        }
+        &.item--r {
+            p {
+                font-size: .35rem;
+                margin: .25rem 10%;
+                color: #fff;
+            }
+        }
+    }
+}

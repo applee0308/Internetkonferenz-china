@@ -1,0 +1,38 @@
+@import './components/site';
+* {
+    margin: 0;
+}
+
+.poster {
+    width: 100%;
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+
+.option--back {
+    position: absolute;
+    top: 28px;
+    img {
+        padding: 0 10px;
+    }
+}
+
+.option--pos {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    width: 100%;
+    max-width: 640px;
+    text-align: right;
+    img {
+        transition: all .75s;
+        width: 38px;
+        margin-right: 20px;
+        cursor: pointer;
+        &.up {
+            transform: rotate(180deg);
+        }
+    }
+}

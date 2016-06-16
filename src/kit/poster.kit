@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Document</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../dist/css/poster.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="poster">
+            <img src="../images/meeting/poster-meeting.jpg" alt="">
+        </section>
+        <section class="option option--back">
+            <a href="##"><img id="btn-back" width="16" src="../images/meeting/icon-back.png" alt=""></a>
+        </section>
+        <section class="option option--pos">
+            <div class="item">
+                <img id="btn-pos" src="../images/meeting/icon.png" alt="">
+            </div>
+        </section>
+    </div>
+</body>
+<script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+<script>
+$(function() {
+    // 监测屏幕滚动事件
+    $(window).scroll(function(event) {
+        if ($(document).scrollTop() >= 350) {
+            $("#btn-pos").addClass("up");
+        } else {
+            $("#btn-pos").removeClass("up");
+        }
+    });
+    // 定位至相应位置
+    $("#btn-pos").on('click', function(event) {
+        event.preventDefault();
+        if ($(document).scrollTop() >= 350) {
+            $("html,body").animate({
+                scrollTop: "0"
+            }, 500);
+        } else {
+            $("html,body").animate({
+                scrollTop: "386"
+            }, 500);
+        }
+    });
+})
+</script>
+
+</html>

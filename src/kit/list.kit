@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Document</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../dist/css/list.css">
+    <!-- 如果发现在UC浏览器上字体大小不正常=>在viewport.js之前引入一段JS即可 -->
+    <script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+    <script type="text/javascript">
+        // viewport.js => get dpi && for em and rem
+        // Ensure load it before document loaded;
+        !function(e,t){function i(){var t=r.getBoundingClientRect().width;t/m>540&&(t=540*m);var i=t/10;r.style.fontSize=i+"px",d.rem=e.rem=i}var a,n=e.document,r=n.documentElement,o=n.querySelector('meta[name="viewport"]'),l=n.querySelector('meta[name="flexible"]'),m=0,s=0,d=t.flexible||(t.flexible={});if(o){console.warn("将根据已有的meta标签来设置缩放比例");var c=o.getAttribute("content").match(/initial\-scale=([\d\.]+)/);c&&(s=parseFloat(c[1]),m=parseInt(1/s))}else if(l){var p=l.getAttribute("content");if(p){var c=p.match(/initial\-dpr=([\d\.]+)/),u=p.match(/maximum\-dpr=([\d\.]+)/);c&&(m=parseFloat(c[1]),s=parseFloat((1/m).toFixed(2))),u&&(m=parseFloat(u[1]),s=parseFloat((1/m).toFixed(2)))}}if(!m&&!s){var f=(e.navigator.appVersion.match(/android/gi),e.navigator.appVersion.match(/iphone/gi)),v=e.devicePixelRatio;m=f?v>=3&&(!m||m>=3)?3:v>=2&&(!m||m>=2)?2:1:1,s=1/m}if(r.setAttribute("data-dpr",m),!o)if(o=n.createElement("meta"),o.setAttribute("name","viewport"),o.setAttribute("content","initial-scale="+s+", maximum-scale="+s+", minimum-scale="+s+", user-scalable=no"),r.firstElementChild)r.firstElementChild.appendChild(o);else{var h=n.createElement("div");h.appendChild(o),n.write(h.innerHTML)}e.addEventListener("resize",function(){clearTimeout(a),a=setTimeout(i,300)},!1),e.addEventListener("orientationchange",function(){clearTimeout(a),a=setTimeout(i,300)},!1),e.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(a),a=setTimeout(i,300))},!1),"complete"===n.readyState?n.body.style.fontSize=16*m+"px":n.addEventListener("DOMContentLoaded",function(){n.body.style.fontSize=16*m+"px"},!1),i(),d.dpr=e.dpr=m,d.refreshRem=i,d.rem2px=function(e){var t=parseFloat(e)*this.rem;return"string"==typeof e&&e.match(/rem$/)&&(t+="px"),t},d.px2rem=function(e){var t=parseFloat(e)/this.rem;return"string"==typeof e&&e.match(/px$/)&&(t+="rem"),t}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="list__bg">
+            <img src="../images/list/list-bg.jpg" alt="">
+        </section>
+        <section class="option option--back">
+            <a href="javascript:history.go(-1)"><img height="22" src="../images/meeting/icon-back.png" alt=""></a>
+        </section>
+        <section class="list__content">
+            <ul>
+                <li>
+                    <div class="media">
+                        <!-- 图片规格：300 * 190 -->
+                        <div class="item item--l">
+                            <img src="../images/list/card.png" alt="">
+                        </div>
+                        <div class="item item--r">
+                            <p>礼品名称：亿点上网卡</p>
+                            <p>礼品数量：1000张</p>
+                            <p>提供单位：亿点连接</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="item item--l">
+                            <img src="../images/list/card.png" alt="">
+                        </div>
+                        <div class="item item--r">
+                            <p>礼品名称：亿点上网卡</p>
+                            <p>礼品数量：1000张</p>
+                            <p>提供单位：亿点连接</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="item item--l">
+                            <img src="../images/list/card.png" alt="">
+                        </div>
+                        <div class="item item--r">
+                            <p>礼品名称：亿点上网卡</p>
+                            <p>礼品数量：1000张</p>
+                            <p>提供单位：亿点连接</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

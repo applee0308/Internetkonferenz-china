@@ -1,0 +1,54 @@
+@import './base/normalize';
+@import './base/utils';
+@import './components/site';
+#ifc-2016 {
+    border: 3px solid #282828;
+    box-shadow: 0 0 3px 3px #000;
+}
+
+header {
+    width: 100%;
+    border-bottom: 3px solid #282828;
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+
+.content {
+    @include clearfix;
+    border-bottom: 3px solid #282828;
+    .item {
+        border-bottom: 3px solid #282828;
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
+.content__l {
+    float: left;
+    width: 61.280%;
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+
+.content__r {
+    float: right;
+    width: 38.720%;
+    border-left: 3px solid #282828;
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+
+footer {
+    width: 100%;
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}

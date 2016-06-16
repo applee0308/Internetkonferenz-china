@@ -1,0 +1,13 @@
+@import '../base/utils';
+body {
+	background: #f5f5f9;
+}
+* {
+	@include setTapColor;
+}
+.container {
+	position: relative;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}

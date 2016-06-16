@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Document</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../dist/css/poster.css">
+    <style>
+        /*  == 2016/6/16 Shine ==  */
+        body{background:#f5f5f9}*{-webkit-tap-highlight-color:transparent}.container{position:relative;max-width:640px;min-width:320px;margin:0 auto}*{margin:0}.poster{width:100%}.poster img{width:100%;vertical-align:middle}.option--back{position:absolute;top:28px}.option--back img{padding:0 10px}.option--pos{position:fixed;z-index:999;bottom:20px;width:100%;max-width:640px;text-align:right}.option--pos img{-webkit-transition:all .75s;transition:all .75s;width:38px;margin-right:20px;cursor:pointer}.option--pos img.up{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="poster">
+            <img src="../images/meeting/poster-meeting.jpg" alt="">
+        </section>
+        <section class="option option--back">
+            <a href="javascript:history.go(-1)"><img id="btn-back" width="16" src="../images/meeting/icon-back.png" alt=""></a>
+        </section>
+        <section class="option option--pos">
+            <div class="item">
+                <img id="btn-pos" src="../images/meeting/icon.png" alt="">
+            </div>
+        </section>
+    </div>
+</body>
+<script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+<script>
+$(function() {
+    // 监测屏幕滚动事件
+    $(window).scroll(function(event) {
+        if ($(document).scrollTop() >= 350) {
+            $("#btn-pos").addClass("up");
+        } else {
+            $("#btn-pos").removeClass("up");
+        }
+    });
+    // 定位至相应位置
+    $("#btn-pos").on('click', function(event) {
+        event.preventDefault();
+        if ($(document).scrollTop() >= 350) {
+            $("html,body").animate({
+                scrollTop: "0"
+            }, 500);
+        } else {
+            $("html,body").animate({
+                scrollTop: "386"
+            }, 500);
+        }
+    });
+})
+</script>
+
+</html>
