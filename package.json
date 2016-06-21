@@ -1,0 +1,19 @@
+{
+  "name": "ikc",
+  "version": "1.0.0",
+  "description": "中国互联网大会",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applee0308/Internetkonferenz-china.git"
+  },
+  "author": "Shine_zh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/applee0308/Internetkonferenz-china/issues"
+  },
+  "homepage": "https://github.com/applee0308/Internetkonferenz-china#readme"
+}
