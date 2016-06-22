@@ -35,18 +35,18 @@
             <input type="text" name="" id="userPsw" placeholder="请输入密码">
         </div>
         <div class="w--105">
-            <button class="btn btn--primary">登录</button>
+            <button class="btn btn--primary" id="btnLogin">登录</button>
         </div>
     </div>
     <h4>已有验证码可以直接登录</h4>
-</section>        <section class="qk-entry">
+</section>        <section class="qk-entry" id="qkLogin">
 	<p>欢迎您再次使用建飞Wi-Fi</p>
 	<p>直接点击按钮无需输入即可上网</p>
 	<div class="option">
 	    <button class="btn  btn--primary">快捷登录</button>
 	</div>
 	<div class="to-login">
-	    我要<a href="##">重新登录</a>
+	    我要<a href="##" id="toEntry">重新登录</a>
 	</div>
 </section>    </div>
     <div class="splashScreen" style="display:none">
@@ -69,6 +69,13 @@ $(function() {
         event.preventDefault();
         $(this).siblings('input').focus();
     });
+    $("#btnLogin").on("click",function() {
+        $(".splashScreen").fadeIn(400);
+    })
+    $("#toEntry").on("click", function() {
+        $("#qkLogin").hide();
+        $(".entry").fadeIn(400);
+    })
 })
 </script>
 
