@@ -131,17 +131,19 @@ body { background: #f5f5f9; }
 
 .container { position: relative; max-width: 640px; min-width: 320px; margin: 0 auto; }
 
-.ifc__bg { width: 100%; }
+.qk-entry { position: absolute; width: 90%; margin: 0 5%; padding: 10px 0px; color: #333; border-radius: 3px; background: #fff; }
 
-.ifc__bg img { vertical-align: middle; width: 100%; }
+.qk-entry p { margin: 3px 3px; font-weight: normal; font-size: .4rem; text-align: center; }
 
-.option__dummy { position: absolute; top: 17%; left: 35%; width: 30%; height: 120px; text-indent: -9999em; cursor: pointer; background: transparent; }
+.qk-entry .option { margin: 10px; text-align: center; }
 
-.summary { position: absolute; width: 100%; top: 53%; text-align: center; }
+.qk-entry .option button { height: 40px; padding: 0 25px; font-size: .425rem; }
 
-.summary p { margin: 2px 0; font-size: .35rem; color: #fff; }
+.qk-entry .to-login { padding: 0 10%; font-size: .4rem; }
 
-.entry { position: absolute; top: 63%; width: 90%; margin: 0 5%; padding: 15px 10px; border-radius: 3px; background: #fff; }
+.qk-entry .to-login a { color: #239ae5; text-decoration: underline; }
+
+.entry { position: absolute; width: 90%; margin: 0 5%; padding: 15px 10px; border-radius: 3px; background: #fff; }
 
 .entry h4 { color: #eb4a4a; margin: 6px 3px; font-weight: normal; font-size: .325rem; }
 
@@ -164,3 +166,17 @@ body { background: #f5f5f9; }
 .btn.btn--primary { background: #32d2e9; color: #fff; }
 
 .btn.btn--info { background: #3e5982; color: #fff; }
+
+.ifc__bg { width: 100%; }
+
+.ifc__bg img { vertical-align: middle; width: 100%; }
+
+.option__dummy { position: absolute; top: 17%; left: 35%; width: 30%; height: 120px; text-indent: -9999em; cursor: pointer; background: transparent; }
+
+.summary { position: absolute; width: 100%; top: 53%; text-align: center; }
+
+.summary p { margin: 2px 0; font-size: .35rem; color: #fff; }
+
+.entry { top: 63%; }
+
+.qk-entry { top: 63%; }

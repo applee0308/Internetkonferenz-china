@@ -7,48 +7,57 @@
     <title>Document</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <script src="../dist/js/viewport.bundle.js"></script>
-    <link rel="stylesheet" href="../dist/css/login.css">
+    <link rel="stylesheet" href="../dist/css/login-s.css">
 </head>
 
 <body>
     <div class="container">
         <!-- IFC poster -->
         <section class="ifc__bg">
-            <img src="../images/ifc-bg.jpg" alt="">
+            <img src="../images/ifc-bg-s.jpg" alt="">
         </section>
         <!-- The node for download App -->
         <section class="option__dummy" onclick="test()">\(^o^)/~</section>
-        <section class="summary">
-            <p>下载亿点连接APP——去展厅B3-1告知</p>
-            <p>兑换码<span>HLWDH2016</span>——即可免费领取</p>
-        </section>
-        <!-- Form -->
-        <section class="entry">
-            <div class="row row--flex">
-                <div class="flex--fluid">
-                    <div class="icon"><img src="../images/phone.png" height="20" alt=""></div>
-                    <input type="tel" name="" id="userPhone" placeholder="请输入手机号">
-                </div>
-                <div class="w--105">
-                    <button class="btn btn--primary">获取验证码</button>
-                </div>
-            </div>
-            <h4>验证码为5小时内上网凭证</h4>
-            <div class="row row--flex">
-                <div class="flex--fluid">
-                    <div class="icon"><img src="../images/key.png" height="20" alt=""></div>
-                    <input type="text" name="" id="userPsw" placeholder="请输入密码">
-                </div>
-                <div class="w--105">
-                    <button class="btn btn--info">登录</button>
-                </div>
-            </div>
-            <h4>已有验证码可以直接登录</h4>
-        </section>
+        <section class="entry" style="display:none">
+    <div class="row row--flex">
+        <div class="flex--fluid">
+            <div class="icon"><img src="../images/phone.png" height="20" alt=""></div>
+            <input type="tel" name="" id="userPhone" placeholder="请输入手机号">
+        </div>
+        <div class="w--105">
+            <button class="btn btn--primary">获取验证码</button>
+        </div>
     </div>
-</body>
+    <h4>验证码为5小时内上网凭证</h4>
+    <div class="row row--flex">
+        <div class="flex--fluid">
+            <div class="icon"><img src="../images/key.png" height="20" alt=""></div>
+            <input type="text" name="" id="userPsw" placeholder="请输入密码">
+        </div>
+        <div class="w--105">
+            <button class="btn btn--primary">登录</button>
+        </div>
+    </div>
+    <h4>已有验证码可以直接登录</h4>
+</section>        <section class="qk-entry">
+	<p>欢迎您再次使用建飞Wi-Fi</p>
+	<p>直接点击按钮无需输入即可上网</p>
+	<div class="option">
+	    <button class="btn  btn--primary">快捷登录</button>
+	</div>
+	<div class="to-login">
+	    我要<a href="##">重新登录</a>
+	</div>
+</section>    </div>
+    <div class="splashScreen" style="display:none">
+	<div class="x-spinner">
+  		<div class="x-spinner-item"></div>
+  		<div class="x-spinner-item"></div>
+  		<div class="x-spinner-item"></div>
+	</div>
+</div></body>
 <script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+<script src="../dist/js/viewport.bundle.js"></script>
 <script>
 // text
 function test() {

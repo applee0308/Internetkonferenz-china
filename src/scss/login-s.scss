@@ -1,8 +1,9 @@
 @import './base/normalize';
 @import './base/utils';
 @import './components/site';
-@import './components/qklogin';
+@import './components/layer';
 @import './components/entry';
+@import './components/qklogin';
 .ifc__bg {
     width: 100%;
     img {
@@ -13,29 +14,17 @@
 
 .option__dummy {
     position: absolute;
-    top: 17%;
-    left: 35%;
-    width: 30%;
-    height: 120px;
+    top: 44%;
+    left: 5%;
+    width: 90%;
+    height: 10%;
     text-indent: -9999em;
     cursor: pointer;
     background: rgba(0, 0, 0, 0);
 }
-
-.summary {
-    position: absolute;
-    width: 100%;
-    top: 53%;
-    text-align: center;
-    p {
-        margin: 2px 0;
-        font-size: .35rem;
-        color: #fff;
-    }
-}
 .entry {
-    top: 63%;
+    top: 17%;
 }
 .qk-entry {
-    top: 63%;
+    top: 17%;
 }

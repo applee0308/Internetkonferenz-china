@@ -1,0 +1,37 @@
+.qk-entry {
+    position: absolute;
+    width: 90%;
+    margin: 0 5%;
+    padding: 10px 0px;
+    color: #333;
+    border-radius: 3px;
+    background: #fff
+}
+
+.qk-entry p {
+    margin: 3px 3px;
+    font-weight: normal;
+    font-size: .4rem;
+    text-align: center
+}
+
+.qk-entry .option {
+    margin: 10px;
+    text-align: center
+}
+
+.qk-entry .option button {
+    height: 40px;
+    padding: 0 25px;
+    font-size: .425rem;
+}
+
+.qk-entry .to-login {
+    padding: 0 10%;
+    font-size: .4rem
+}
+
+.qk-entry .to-login a {
+    color: #239ae5;
+    text-decoration: underline
+}
